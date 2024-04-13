@@ -1,9 +1,9 @@
 package com.challenge.conversor.models;
 
 public class Conversor {
-    private String base_code;
-    private String target_code;
-    private double conversion_rate;
+    private final String base_code;
+    private final String target_code;
+    private final double conversion_rate;
     public Conversor(ConversorRecord cr){
         this.base_code = cr.base_code();
         this.target_code = cr.target_code();
